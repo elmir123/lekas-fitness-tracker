@@ -5,6 +5,9 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/elmir123/lekas-fitness-tracker?color=green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/elmir123/lekas-fitness-tracker?color=orange)
 
+<img alt="mongoDB" src="https://img.shields.io/badge/mongoDB-DB-green"/>
+<img alt="mongoose" src="https://img.shields.io/badge/mongoose-DB-green"/>
+
 Click here to open site:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)]()
@@ -27,7 +30,10 @@ Technologies
 <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <img alt="Express.js" src="https://img.shields.io/badge/express.js-%23404d59.svg?&style=for-the-badge"/>
 <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
+
 </p>
+
+
 
 
 
