@@ -2,7 +2,8 @@
 const router = require('express').Router();
 const Workout = require('../models/Exercise.js');
 
-//get all workouts using aggrate set the new field totalDuration and sort by id
+//get all workouts using aggrate set the new field totalDuration
+//with the exercises aggragated value of the duration and sort by id
 router.get('/api/workouts', (req, res) => {
   Workout.aggregate([
     {
@@ -27,8 +28,7 @@ router.get('/api/workouts/range', (req, res) => {
     },
   ]).sort({_id: -1}).limit(7).then(data => {
       res.json(data);
-    })
-    .catch(err => {
+    }).catch(err => {
       res.status(400).json(err);
     });
 });
@@ -49,8 +49,7 @@ router.put('/api/workouts/:id', ({body, params}, res) => {
     {$push: {exercises: body}},
     {new: true}).then(data => {
       res.json(data);
-    })
- .catch(err => {
+    }).catch(err => {
       res.status(400).json(err);
     });
 });
