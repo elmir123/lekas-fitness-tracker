@@ -10,7 +10,7 @@
 
 Click here to open site:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)]()
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://lekas-fitness-tracker.herokuapp.com/)
 
 ## Track your excersieses
 
