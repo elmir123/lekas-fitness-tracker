@@ -33,7 +33,11 @@ Technologies
 
 </p>
 
+The following image demonstrates the web application's appearance:
+![Lekas Fitness Tracker.](./assets/images/fitness-tracker.png)
 
 
+To view the working app use the link below:
 
+https://lekas-fitness-tracker.herokuapp.com/
 
