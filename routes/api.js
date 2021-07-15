@@ -11,8 +11,8 @@ router.get('/api/workouts', (req, res) => {
         totalDuration: {$sum: '$exercises.duration'},
       },
     },
-  ]).sort({_id: -1}).then(
-    data => {res.json(workoutData);
+  ]).sort({_id: 1}).then(
+    data => {res.json(data);
   }).catch(
     err => {res.status(400).json(err);
   });
