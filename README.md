@@ -14,6 +14,11 @@ Click here to open site:
 Track your excersieses
 
 Usage:
+- npm run seed
 - npm start
-- npm seed
-- npm
+- Use the navigation bar to view stats or 
+    add/contunue your excercise
+- To add an excercise use the new workout button
+- To add to your exesting workout use the continue workout
+
+
