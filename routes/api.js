@@ -17,7 +17,7 @@ router.get('/api/workouts', (req, res) => {
   });
 });
 
-// sort workouts by id and get last 7 workouts
+// sort workouts by id and limt query to 7 workouts
 router.get('/api/workouts/range', (req, res) => {
   Workout.aggregate([
     {
@@ -25,11 +25,8 @@ router.get('/api/workouts/range', (req, res) => {
         totalDuration: {$sum: '$exercises.duration'},
       },
     },
-  ])
-    .sort({_id: -1})
-    .limit(7)
-    .then(data => {
-      res.json(workoutData);
+  ]).sort({_id: -1}).limit(7).then(data => {
+      res.json(data);
     })
     .catch(err => {
       res.status(400).json(err);
@@ -38,25 +35,22 @@ router.get('/api/workouts/range', (req, res) => {
 
 //create a workout
 router.post('/api/workouts', ({body}, res) => {
-  Workout.create(body)
-    .then(data => {
+  Workout.create(body).then(data => {
       res.json(data);
-    })
-    .catch(err => {
+    }).catch(err => {
       res.status(400).json(err);
     });
 });
 
-// filter workouts by id
+// update workouts and set the exercises body element
 router.put('/api/workouts/:id', ({body, params}, res) => {
   Workout.findByIdAndUpdate(
     {_id: params.id},
     {$push: {exercises: body}},
-    {new: true})
-    .then(data => {
+    {new: true}).then(data => {
       res.json(data);
     })
-    .catch(err => {
+ .catch(err => {
       res.status(400).json(err);
     });
 });
