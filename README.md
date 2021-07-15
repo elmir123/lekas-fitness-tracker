@@ -4,9 +4,8 @@
 ![npm](https://img.shields.io/npm/v/npm?color=orange&logo=npm)
 ![GitHub language count](https://img.shields.io/github/languages/count/elmir123/lekas-fitness-tracker?color=green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/elmir123/lekas-fitness-tracker?color=orange)
-
-<img alt="mongoDB" src="https://img.shields.io/badge/mongoDB-DB-green"/>
-<img alt="mongoose" src="https://img.shields.io/badge/mongoose-DB-green"/>
+![mongoDB](https://img.shields.io/badge/mongoDB-DB-green)
+![mongoose](https://img.shields.io/badge/mongoose-DB-green")
 
 Click here to open site:
 
